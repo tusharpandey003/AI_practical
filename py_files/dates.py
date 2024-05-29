@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-date_rng = pd.date_range(start='1800-01-01', end='2023-05-25', freq='D')
+date_rng = pd.date_range(start='2000-01-01', end='2024-05-25', freq='D')
 df = pd.DataFrame({"Dates": date_rng})
 
 
@@ -10,18 +10,18 @@ def generate_temperature(date):
     month = date.month
     # Define temperature ranges for each month (example ranges)
     temp_ranges = {
-        1: (8, 14),   # January
-        2: (11, 20),   # February
-        3: (17, 29),   # March
-        4: (23, 35),  # April
-        5: (34, 46),  # May
-        6: (35, 47),  # June
+        1: (8, 13),   # January
+        2: (11, 16),   # February
+        3: (17, 22),   # March
+        4: (23, 29),  # April
+        5: (28, 33),  # May
+        6: (29, 35),  # June
         7: (32, 39),  # July
-        8: (28, 38),  # August
+        8: (30, 38),  # August
         9: (25, 34),  # September
         10: (21, 33),  # October
-        11: (14, 24),  # November
-        12: (8, 17)   # December
+        11: (16, 24),  # November
+        12: (9, 17)   # December
     }
     # Get the temperature range for the month
     temp_range = temp_ranges.get(month, (0, 10))
