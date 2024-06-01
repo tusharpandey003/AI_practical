@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # Define the start and end date for the DataFrame
 start_date = '2023-01-01'
-end_date = '2024-12-31'
+end_date = '2023-12-31'
 
 # Generate a date range
 date_range = pd.date_range(start_date, end_date)
@@ -27,12 +27,12 @@ def generate_temperature(date):
         3: 18,   # March
         4: 23,   # April
         5: 28,   # May
-        6: 33,   # June
-        7: 37,   # July
+        6: 36,   # June
+        7: 38,   # July
         8: 34,   # August
         9: 30,   # September
         10: 25,  # October
-        11: 20,  # November
+        11: 22,  # November
         12: 15   # December
     }
     # Generate a random deviation within [-3, 3]
