@@ -22,18 +22,18 @@ def generate_temperature(date):
     day = date.day
     # Define temperature range for each month (example ranges)
     base_temp = {
-        1: 10,   # January
+        1: 9,   # January
         2: 13,   # February
         3: 18,   # March
         4: 23,   # April
-        5: 28,   # May
+        5: 29,   # May
         6: 36,   # June
-        7: 38,   # July
-        8: 34,   # August
-        9: 30,   # September
-        10: 25,  # October
-        11: 22,  # November
-        12: 15   # December
+        7: 43,   # July
+        8: 37,   # August
+        9: 32,   # September
+        10: 29,  # October
+        11: 24,  # November
+        12: 18   # December
     }
     # Generate a random deviation within [-3, 3]
     deviation = np.random.randint(-2, 2)
