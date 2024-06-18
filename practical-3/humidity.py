@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-df = pd.read_csv("csv_files/day.csv")
+df = pd.read_csv("practical-2//day.csv")
 df = df.drop(df.columns[0], axis=1)
 
 df['Date'] = pd.to_datetime(df['Date'])
@@ -32,7 +32,7 @@ def generate_humidity(date):
 
 
 x = df['Date'].apply(generate_humidity)
-df['Humidity'] = x.apply(lambda x: round(x, 2))
+df['Humidity in percent'] = x.apply(lambda x: round(x, 2))
 print(df)
 
 df.to_csv("humidity.csv", index=False)
