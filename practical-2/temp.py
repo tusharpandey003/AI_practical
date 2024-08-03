@@ -4,7 +4,7 @@ import plotly.express as px
 
 
 # Define the start and end date for the DataFrame
-start_date = '2023-01-01'
+start_date = input("please enter start year:")
 end_date = '2023-12-31'
 
 # Generate a date range
